@@ -59,7 +59,12 @@ class _NoteState extends State<Note> {
               width: 300,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Text(widget.message, style: TextStyle(color: Colors.black),textAlign: TextAlign.justify,),
+                child: Text(widget.message, style: TextStyle(
+                    color: Colors.black,
+                  fontSize: 16,
+                  fontWeight: FontWeight.w600,
+                )
+                  ,textAlign: TextAlign.justify,),
               ),
             ),
             onTap: (){
@@ -108,7 +113,7 @@ class _NoteState extends State<Note> {
               try {
                 _firestore.collection('notes').document(
                     widget.name).delete();
-                widget.message='This task is no more available';
+                widget.message='This task is no longer available';
                 setState(() {
 
                 });

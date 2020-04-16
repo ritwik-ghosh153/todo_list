@@ -34,7 +34,9 @@ class _HomeState extends State<Home> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('to-do List'),
+        title: Text('TO-DO LIST 📝',
+        style: TextStyle(fontWeight: FontWeight.w800,fontSize: 25,fontFamily: 'Pacifico',),),
+//        leading: Icon(Icons.library_books),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.add),
