@@ -10,6 +10,8 @@ A flutter app to keep notes
 - It can change the status of a task from pending to complete and vice versa
 
 ## Screenshots
+![Main page]('ritwik ghosh todo list.png')
+![Input]('ritwik ghosh todo list input.png')
 
 ## Future Prospects
 
